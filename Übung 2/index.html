@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**************
+       * Array
+       *************/
+      const array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      array[0] = "Köln";
+      array[1] = true;
+      array[2] = "Apfel";
+      array[3] = {
+        a: 12,
+        b: 30,
+        c: -9,
+      };
+      array[4] = 5 * 3.25;
+      array[5] = "Trick 17,5";
+      array[6] = "Hallo" + "Leute";
+      array[7] = false;
+      array[8] = [8, 88, 888, -88, -8];
+      array[9] = {};
+      array[10] = "Die Welt ist rund";
+
+      /***********
+       * wird auf der console ausgegeben
+       * **********/
+      console.log("----ARRAY----");
+      console.log("0", array[2]);
+      console.log("1", array[10]);
+      console.log("2", array[5]);
+      console.log("3", array[3]);
+      console.log("4", array[8]);
+      console.log("5", array[6]);
+      console.log("6", array[9]);
+      console.log("7", array[1]);
+      console.log("8", array[4]);
+      console.log("9", array[7]);
+      console.log("10", array[0]);
+      console.log("________________");
+
+      /***********
+       * wird auf der console ausgegeben
+       * **********/
+      console.log("Eintrag 0 =", array[2]);
+      console.log("Eintrag 4 =", array[8]);
+      console.log("Eintrag 8 =", array[4]);
+      console.log("Eintrag 2 =", array[5]);
+      console.log("________________");
+
+      /**************
+       * JSON-OBJECT
+       *************/
+      const json = {
+        stadt: "Köln",
+        status: true,
+        frucht: "Apfel",
+        blabla: { a: 12, b: 30, c: -9 },
+        multi: 5 * 3.25,
+        derScheinTruegt: "Trick 15,5",
+        kombi: "Hallo" + "Leute",
+        alternative: false,
+        alleGutenDingeSind8: [8, 88, 888, -88, -8],
+        leer: {},
+        tatsache: "Die Welt ist rund",
+      };
+
+      /***********
+       * wird auf der console ausgegeben
+       * **********/
+      console.log("----JSON----");
+      console.log(json);
+      console.log("________________");
+
+      /***********
+       * wird auf der console ausgegeben
+       * **********/
+      console.log("Eintrag-kombi =", json.kombi);
+      console.log("Eintrag-tatsache =", json.tatsache);
+      console.log("Eintrag-frucht =", json.frucht);
+      console.log("Eintrag-blabla =", json.blabla);
+    </script>
+  </body>
+</html>
